@@ -1,0 +1,41 @@
+google-services.json
+*.keystore
+*.jks
+*.pem
+*.p12
+*.cer
+## Gradle
+.gradle/
+build/
+
+## Android Studio
+.idea/
+*.iml
+captures/
+local.properties
+
+## Logs
+*.log
+
+## Generated
+app/build/
+app/debug/
+
+## OS
+.DS_Store
+Thumbs.db
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties

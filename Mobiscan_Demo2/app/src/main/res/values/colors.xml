@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cyberpunk Color Palette -->
+    <color name="cyber_black">#0A0A0A</color>
+    <color name="cyber_dark_gray">#1A1A1A</color>
+    <color name="cyber_gray">#2A2A2A</color>
+    <color name="cyber_light_gray">#3A3A3A</color>
+    
+    <!-- Neon Colors -->
+    <color name="neon_pink">#FF0080</color>
+    <color name="neon_cyan">#00FFFF</color>
+    <color name="neon_purple">#8000FF</color>
+    <color name="neon_green">#00FF80</color>
+    <color name="neon_yellow">#FFFF00</color>
+    <color name="neon_orange">#FF8000</color>
+    
+    <!-- Gradients and Effects -->
+    <color name="cyber_gradient_start">#FF0080</color>
+    <color name="cyber_gradient_end">#8000FF</color>
+    <color name="cyber_glow">#FF008033</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#CCCCCC</color>
+    <color name="text_neon">#00FFFF</color>
+    
+    <!-- Status Colors -->
+    <color name="status_success">#00FF80</color>
+    <color name="status_warning">#FFFF00</color>
+    <color name="status_error">#FF0080</color>
+    <color name="status_info">#00FFFF</color>
+    
+    <!-- Legacy Colors (keeping for compatibility) -->
+    <color name="black">@color/cyber_black</color>
+    <color name="white">@color/text_primary</color>
+    <color name="purple_200">@color/neon_purple</color>
+    <color name="purple_500">@color/neon_pink</color>
+    <color name="purple_700">@color/cyber_gradient_end</color>
+    <color name="teal_200">@color/neon_cyan</color>
+    <color name="teal_700">@color/neon_cyan</color>
+</resources>

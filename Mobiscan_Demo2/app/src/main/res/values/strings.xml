@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mobiscan Demo</string>
+    <string name="location_placeholder">Lat: -- , Lng: --</string>
+    <string name="get_location">Get Location</string>
+</resources>

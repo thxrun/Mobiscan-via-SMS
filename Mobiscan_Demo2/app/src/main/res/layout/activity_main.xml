@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cyber_gradient_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo"
+                android:background="@drawable/cyber_card_background"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOBISCAN"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/neon_pink"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CYBER SECURITY SUITE"
+                android:textSize="12sp"
+                android:textColor="@color/neon_cyan"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.1" />
+
+        </LinearLayout>
+
+        <!-- Status Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/cyber_dark_gray"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/neon_green"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔒 SYSTEM STATUS"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/neon_green"
+                    android:fontFamily="monospace"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/statusText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Initializing security protocols..."
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:fontFamily="monospace" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- SIM Tracking Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/cyber_dark_gray"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/neon_pink"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📱 SIM TRACKING"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/neon_pink"
+                    android:fontFamily="monospace"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alternate Contact Number:"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:fontFamily="monospace"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/alternateNumberInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter phone number"
+                    android:inputType="phone"
+                    android:background="@drawable/cyber_input_background"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_secondary"
+                    android:fontFamily="monospace"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/saveAlternateNumberButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💾 SAVE &amp; ACTIVATE"
+                    android:background="@drawable/cyber_button_background"
+                    android:textColor="@color/cyber_black"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/refreshSimStatusButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔄 REFRESH SIM STATUS"
+                    android:background="@drawable/cyber_button_background"
+                    android:textColor="@color/cyber_black"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:padding="12dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Control Panel -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/cyber_dark_gray"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/neon_cyan"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎛️ CONTROL PANEL"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/neon_cyan"
+                    android:fontFamily="monospace"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Row 1: Ring and Location -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <Button
+                        android:id="@+id/ringButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="🔊 RING"
+                        android:background="@drawable/cyber_button_background"
+                        android:textColor="@color/cyber_black"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:padding="12dp"
+                        android:layout_marginEnd="4dp" />
+
+                    <Button
+                        android:id="@+id/locationButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="📍 LOCATE"
+                        android:background="@drawable/cyber_button_background"
+                        android:textColor="@color/cyber_black"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:padding="12dp"
+                        android:layout_marginStart="4dp" />
+
+                </LinearLayout>
+
+                <!-- Row 2: Lock and Permissions -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <Button
+                        android:id="@+id/lockButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="🔒 LOCK"
+                        android:background="@drawable/cyber_button_background"
+                        android:textColor="@color/cyber_black"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:padding="12dp"
+                        android:layout_marginEnd="4dp" />
+
+                    <Button
+                        android:id="@+id/permissionsButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="⚙️ PERMISSIONS"
+                        android:background="@drawable/cyber_button_background"
+                        android:textColor="@color/cyber_black"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:padding="12dp"
+                        android:layout_marginStart="4dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- SMS Commands Info -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/cyber_dark_gray"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/neon_yellow"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📨 SMS COMMANDS"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/neon_yellow"
+                    android:fontFamily="monospace"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send SMS commands to control your device remotely:"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:fontFamily="monospace"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔊 MOBI RING - Ring device\n📍 MOBI LOCATION - Get location\n🔒 MOBI LOCK - Lock device\n📱 MOBI SIM - Check SIM status\n❓ MOBI HELP - Show all commands"
+                    android:textSize="11sp"
+                    android:textColor="@color/text_secondary"
+                    android:fontFamily="monospace"
+                    android:lineSpacingExtra="2dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CYBER SECURITY ACTIVE • V1.0"
+            android:textSize="10sp"
+            android:textColor="@color/text_secondary"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:letterSpacing="0.2" />
+
+    </LinearLayout>
+</ScrollView>
